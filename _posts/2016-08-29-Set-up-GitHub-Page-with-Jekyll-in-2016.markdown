@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Set up GitHub Page with Jekyll in 2016"
-date:   2016-08-29
+date:   2016-08-29 02:00:00
 categories: blog
 ---
 
