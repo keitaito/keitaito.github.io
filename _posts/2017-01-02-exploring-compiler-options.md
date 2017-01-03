@@ -47,6 +47,7 @@ Probably, my guess is on my machine, which is macOS Sierra Version 10.12.2, the 
 [What is clang's equivalent to -rdynamic gcc flag?](http://stackoverflow.com/questions/21279036/what-is-clangs-equivalent-to-rdynamic-gcc-flag)
 
 So, the solution is `-Wl,-export_dynamic`. However, after fixing this, another warning is thrown.
+
 ```sh
 clang: warning: -Wl,-export_dynamic: 'linker' input unused
 ```
