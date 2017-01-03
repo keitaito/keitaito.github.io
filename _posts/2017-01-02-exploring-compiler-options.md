@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Exploring Compiler Options"
+title:  "Exploring LLVM/Clang Compiler Options"
 date:   2017-01-02
 categories: blog
 ---
@@ -16,9 +16,7 @@ clang: warning: argument unused during compilation: '-rdynamic'
 ```
 It is a pretty trivial warning, but I decided to dig in the warning to solve it.
 
----
-
-### What is `-rdynamic` option?
+## What is `-rdynamic` option?
 
 First, I googled the `-rdynamic` option, which is the cause of the warning.
 [According to GNU GCC's online docs](https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html),
@@ -28,7 +26,7 @@ First, I googled the `-rdynamic` option, which is the cause of the warning.
 
 So, it seems the `-rdynamic` options is one for linker. Ok, next, what is `-export-dynamic` option then?
 
-### What is `-export-dynamic` option?
+## What is `-export-dynamic` option?
 [According to GNU's manuals](ftp://ftp.gnu.org/old-gnu/Manuals/ld-2.9.1/html_node/ld_3.html),
 
 `--export-dynamic`
@@ -36,9 +34,7 @@ So, it seems the `-rdynamic` options is one for linker. Ok, next, what is `-expo
 
 Ok, I'd say this option can be used when I use `dlopen` function.
 
----
-
-### Why the warning is thrown?
+## Why the warning is thrown?
 
 Probably, my guess is on my machine, which is macOS Sierra Version 10.12.2, the used compiler is LLVM. I found a question related to this warning on stackoverflow:
 
@@ -53,7 +49,7 @@ clang: warning: -Wl,-export_dynamic: 'linker' input unused
 To fix the warning, I found this question: [how to suppress “linker file unused” when compiling](http://stackoverflow.com/questions/9728564/how-to-suppress-linker-file-unused-when-compiling). So, the solution is not to pass linker options here. `¯\_(ツ)_/¯`
 
 
-### Conclusion
+## Conclusion
 
 There're soooooo many LLVM/Clang compiler options.
 
