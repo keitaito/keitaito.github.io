@@ -12,7 +12,7 @@ You sometimes want Unicode scalar value (or Ascii code value) of a character. Fo
 let unicodeScalarValueOfA = 65
 ```
 
-Hardcoding magic number is not cool, right? Let's get the value with Swift awesome APIs.  
+Hardcoding magic number is not cool, right? Let's get the value with Swift awesome APIs.
 
 Swift's String type has an instance property called `unicodeScalars`. This sounds good to use. However, the return value is of type `String.UnicodeScalarView`.
 
