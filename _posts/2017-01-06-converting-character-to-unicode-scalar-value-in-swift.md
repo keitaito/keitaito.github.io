@@ -39,7 +39,7 @@ Thanks to the awesome Swift type inference, you can just pass in `+` operator to
 In conclusion, let's write all of the above in one line.
 
 ```swift
-let AnotherUnicodeScalarValueOfA = "A".unicodeScalars.map { $0.value }.reduce(0, +)
+let anotherUnicodeScalarValueOfA = "A".unicodeScalars.map { $0.value }.reduce(0, +)
 ```
 
 Looks cool, huh? You might feel like "too many types!". But it also means the Swift compiler always gives us many hints to solve problems. Types are your friends 😎
