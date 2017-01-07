@@ -4,3 +4,7 @@ _site/
 .DS_Store
 vendor/
 .bundle
+
+# cache directory for jekyll-twitter-plugin
+# https://github.com/rob-murray/jekyll-twitter-plugin#caching
+.tweet-cache/
