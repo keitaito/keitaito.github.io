@@ -7,9 +7,14 @@ categories: blog
 
 My friend [@rayfix](https://twitter.com/rayfix) kindly gave me awesome feedback on [the previous post about Converting Character to Unicode scalar value in Swift](http://keitaito.com/blog/2017/01/06/converting-character-to-unicode-scalar-value-in-swift.html).
 
+⚠️ I tried to use jekyll-twitter-plugin to embed tweets into this post. But it seems jekyll plugin like that can't be used with GitHub Pages 😢 So I just quote tweets below.
+
 He gave me 2 other approaches.
 
 ## Approach 1: Simpler and shorter
+
+> @keitaitok Nice post. Made me think. How about just Int(UnicodeScalar("A")!.value) to avoid the loops?
+([The link to this tweet](https://twitter.com/rayfix/status/817363497520537600))
 
 `UnicodeScalar` struct's `init?(_ description: String)` is used ([Doc Ref](https://developer.apple.com/reference/swift/unicodescalar/2430716-init)). This initializer is a failable initializer. The return value is Optional. Out of curiosity, Why is this initializer failable? I checked [Swift repo on GitHub](https://github.com/apple/swift) to see it's implementation (I ❤️ open source). I am not sure if I am allowed to put the code here, so I just put [the link](https://github.com/apple/swift/blob/master/stdlib/public/core/UnicodeScalar.swift#L284-L292) instead. Please check it out yourself.
 
@@ -26,7 +31,8 @@ Let's get back to the converting code. `UnicodeScalar`'s `value` property is of 
 
 ## Approach 2: Much more!
 
-Next, here is the tweet he mentioned to me.
+> @keitaitok An even shorter solution is UInt8(ascii: "A")
+([The link to the tweet](https://twitter.com/rayfix/status/817547336331108352))
 
 `UInt8` has very specific initializer! I didn't know this exists at all. This initializer takes only ascii value, thus 0..<128. You should check [it's implementation](https://github.com/apple/swift/blob/adc54c8a4d13fbebfeb68244bac401ef2528d6d0/stdlib/public/core/UnicodeScalar.swift#L337-L346) out too. My original problem was how to get ascii value, so this approach totally works. If you want unicode scalar value than ascii value, you would use the first approach.
 
