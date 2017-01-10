@@ -17,3 +17,9 @@ Cmd + Shift + . (period)
 I usually prefer hiding hidden files, but I want to see them sometimes in Finder. This keyboard shortcut could be useful!
 
 ![Screen shot](/assets/2017-01-09-screen-shot.png)
+
+---
+
+### Reference
+
+[Finderで隠しファイルを一時的に表示する(キーボードショートカット) (it's written in Japanese)](http://qiita.com/hmiura/items/4709e0776d14055fb2f8)
