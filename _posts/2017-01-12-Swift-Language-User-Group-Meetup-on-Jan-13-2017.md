@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Swift Language User Group Meetup on Jan 13, 2017"
-date:   2017-01-10
+title:  "Swift Language User Group Meetup on Jan 12, 2017"
+date:   2017-01-12
 categories: blog
 ---
 
@@ -22,3 +22,5 @@ I attended [Swift Language User Group's meetup](https://www.meetup.com/swift-lan
 - "Code is for compilers. Style is for people."
 
 I will review their slides and learn what the details.
+
+I went to a bar with my friends afterwards. Fun night 🍻
