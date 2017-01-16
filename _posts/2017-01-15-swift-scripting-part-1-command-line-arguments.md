@@ -5,6 +5,8 @@ date:   2017-01-15
 categories: blog
 ---
 
+## Getting started
+
 You can use Swift as scripting language as well as compiled language. For example:
 
 {% gist 808825984d066690e4ec68f4b1d74f66 %}
@@ -15,6 +17,8 @@ To run this file, execute the command `swift <file-name>` in Terminal (you need 
 $ swift HelloWorld.swift
 Hello, world!
 ```
+
+## Access to arguments
 
 When you use a command line program, you often pass in arguments to the program. You can pass in arguments to a Swift program too. But, the program-side, how can you use the passed arguments? The answer is to use [`CommandLine` enum](https://developer.apple.com/reference/swift/commandline).
 
@@ -42,6 +46,8 @@ bar
 baz
 ```
 
+## Using Foundation
+
 Awesome! Do you want to use Foundation framework with scripting? Of course you can use it. Just add a line `import Foundation` as same as a Xcode project.
 
 {% gist 04fc589b292d00f3a06b4a5b2d1a07bc %}
@@ -57,7 +63,11 @@ baz
 2017-01-16 07:31:41 +0000
 ```
 
-You can now print out the current date! Let's do something more interesting. How about using [`FileManager` class](https://developer.apple.com/reference/foundation/filemanager) to explore your computer? Let's check your home directory!
+You can now print out the current date!
+
+## More Foundation
+
+Let's do something more interesting. How about using [`FileManager` class](https://developer.apple.com/reference/foundation/filemanager) to explore your computer? Let's check your home directory!
 
 - `homeDirectoryForCurrentUser` is an instance property returns the current user's home directory URL.
 - `contentsOfDirectory(atPath:)` is an instance method returns an array of String type that contains file names under the passed directory path.
@@ -91,7 +101,7 @@ This means that `homeDirectoryForCurrentUser` method is a machine environment de
 note: add 'if #available' version check
 ```
 
-### Availability condition
+## Availability condition
 
 A solution is, as the above note says, add an available condition before calling the method. The condition checks the current environment. The method will be invoked since I run this Swift file on my Mac.
 
@@ -128,7 +138,7 @@ Public
 
 You are now able to print out the home directory contents here!
 
-### Using -target option
+## Using -target option
 
 Another solution is using `-target` option with swift command. When you check `swift --help`:
 
