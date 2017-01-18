@@ -180,3 +180,16 @@ I will check out the following later.
 > The * argument is required and specifies that on any other platform, the body of the code block guarded by the availability condition executes on the minimum deployment target specified by your target.
 
 - Why is `CommandLine` enum defined as an enum, not a struct?
+    - [CommandLine.swift](https://github.com/apple/swift/blob/master/stdlib/public/core/CommandLine.swift)
+    - Internal type properties: `_argc`, `_unsafeArgv`.
+    - Public type properties: `argc`, `unsafeArgv`, `arguments`.
+    - [stdlib/public/SwiftShims/RuntimeStubs.h](https://github.com/apple/swift/blob/master/stdlib/public/SwiftShims/RuntimeStubs.h)
+    - [stdlib/public/stubs/CommandLine.cpp](https://github.com/apple/swift/blob/master/stdlib/public/stubs/CommandLine.cpp)
+
+```cpp
+SWIFT_RUNTIME_STDLIB_INTERFACE
+char * _Nullable * _Nonnull
+_swift_stdlib_getUnsafeArgvArgc(int * _Nonnull outArgLen);
+```
+
+https://github.com/apple/swift/blob/master/stdlib/public/SwiftShims/RuntimeStubs.h#L34-L36
