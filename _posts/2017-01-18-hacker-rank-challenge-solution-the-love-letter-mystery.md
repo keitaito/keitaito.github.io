@@ -5,7 +5,7 @@ date:   2017-01-18
 categories: blog
 ---
 
-I solved a coding challenge in HackerRank. The challenge is called [The Love Letter Mystery][1]. Check out my solution below.
+I solved a coding challenge in HackerRank today. The challenge is called [The Love Letter Mystery][1]. Check out my solution below.
 
 {% gist 7123c5b76a7d2b8fa067bf9123089dfc %}
 
