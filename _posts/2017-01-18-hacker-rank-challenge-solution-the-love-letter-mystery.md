@@ -9,7 +9,7 @@ I solved a coding challenge in HackerRank today. The challenge is called [The Lo
 
 {% gist 7123c5b76a7d2b8fa067bf9123089dfc %}
 
-I think it's not elegant. I could improve it.
+I think my solution is not elegant 😅 I could improve it.
 
 The solution idea:
 
