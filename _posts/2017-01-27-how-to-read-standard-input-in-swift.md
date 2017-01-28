@@ -47,6 +47,7 @@ if let input = input {
 One gotcha point here is you can call `split(separator: " ")` method on `input.characters`, not `input`. You need to convert `String` type to kind of Array of `Character` type. And the returned value is also kind of an array of `Character`. You need to map it to an array of `Int`. Since `Int` type doesn't have an initializer with `Character`, you need to convert it to `String` type beforehand. With the above example, if you input `1 2 3 4 5` to the debug console, the return value is `[1, 2, 3, 4, 5]` which is of type `Array<Int>`.
 
 ---
+
 This post is written with this environment:
 
 ```bash
