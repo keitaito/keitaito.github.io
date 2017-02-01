@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Talk Video: Tim Oliver - Realm: How I Learned to Love Databases Again"
+title:  "Talk Video: Tim Oliver"
 date:   2017-01-31
 categories: blog
 ---
