@@ -6,3 +6,5 @@ categories: blog
 ---
 
 Yesterday, I went to NSMeetup February 2017. The speaker was Greg Heo. He talked about Functional Reactive Programming with RxSwift for beginners.
+
+[1]: https://gregheo.com/blog/nsmeetup-rx/
