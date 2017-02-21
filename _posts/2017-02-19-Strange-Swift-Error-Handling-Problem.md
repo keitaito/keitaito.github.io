@@ -5,5 +5,5 @@ date:   2017-02-19
 categories: blog
 ---
 
-This post is under construction. 🚧
+🚧 This post is under construction. 🚧
 Error about catch is not exhaustive.
