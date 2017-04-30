@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Swift Talk 32 Note"
+title:  "Swift Talk Episode 32 Note"
 date:   2017-04-30
 categories: blog
 ---
