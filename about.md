@@ -4,7 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Hello world, this is Keita Ito's website. I love building iOS apps and coding with Swift and Objective-C.
+# About me
+
+Hello world! I'm Keita Ito. I build iOS apps with Swift and Objective-C.
+
+# About this blog
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
